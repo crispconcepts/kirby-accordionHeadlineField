@@ -1,0 +1,27 @@
+.field-with-headline {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+.field-with-headline:first-child {
+  padding-top: 0;
+}
+.field-with-headline .hgroup span {
+  padding-left: 1.5em;
+}
+.field-with-headline .hgroup:after {
+  position: absolute;
+  content: "+";
+  right: 1em;
+  top:20%;
+  color:#fff;
+  font-size:1.5em;
+}
+.field-with-headline .hgroup.active:after {
+  content: "−";
+}
+.field-with-headline .hgroup .hgroup-title {
+	border:none;
+	padding:0.5em 1.0em;
+	background:rgba(0,0,0,0.75);
+  	color: #fff;
+}
