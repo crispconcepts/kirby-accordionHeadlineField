@@ -13,20 +13,21 @@
 				});
 
 				var allPanels = $('.accordion > .accordion-panel').hide();
+				var allTitles = $('.accordion > .field-with-headline > h2');
 
 				$('.accordion > .field-with-headline > h2').click(function() {
 					$this = $(this);
 					$target =  $this.parent().next();
 
-					if(!$target.hasClass('active')){
-					 allPanels.removeClass('active').slideUp();
-					 $target.addClass('active').slideDown();
-					 $(this).addClass('active');
-					} else {
+					if($target.hasClass('active')){
+					 	$('h2.active').removeClass('active');
 						$target.removeClass('active').slideUp();
-					 	$this.removeClass('active');
+					} else {
+					 	allPanels.removeClass('active').slideUp();
+					 	allTitles.removeClass('active');
+						$this.addClass('active');
+						$target.addClass('active').slideDown();
 					}
-					return false;
 				});
 
 
