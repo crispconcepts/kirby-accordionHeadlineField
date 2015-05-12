@@ -4,7 +4,6 @@
         if (app && typeof app == 'object') {
             $(app.main).on('view:load', function () {
 
-
 				$('.field-with-headline').each(function(){
 					$(this).nextUntil(".field-with-headline").andSelf().wrapAll('<div class="accordion" />');
 				});
@@ -14,6 +13,8 @@
 
 				var allPanels = $('.accordion > .accordion-panel').hide();
 				var allTitles = $('.accordion > .field-with-headline > h2');
+
+				$('.accordion > .field-with-headline > h2').first().addClass('active');
 
 				$('.accordion > .field-with-headline > h2').click(function() {
 					$this = $(this);
