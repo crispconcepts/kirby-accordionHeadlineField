@@ -14,7 +14,6 @@
 				var allPanels = $('.accordion > .accordion-panel').hide();
 				var allTitles = $('.accordion > .field-with-headline > h2');
 
-				$('.accordion > .field-with-headline > h2').first().addClass('active');
 
 				$('.accordion > .field-with-headline > h2').click(function() {
 					$this = $(this);
@@ -29,7 +28,7 @@
 						$this.addClass('active');
 						$target.addClass('active').slideDown();
 					}
-				});
+				}).first().addClass('active').parent().next().addClass('active').slideDown(0);
 
 
             });
