@@ -24,4 +24,5 @@
 	padding:0.5em 1.0em;
 	background:rgba(0,0,0,0.75);
   	color: #fff;
+  	cursor: pointer;
 }
