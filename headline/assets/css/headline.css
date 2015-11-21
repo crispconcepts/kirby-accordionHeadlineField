@@ -1,4 +1,11 @@
 .field-with-headline {
+  /*counter-increment: count;*/
+  counter-increment: none;
+}
+.accordion {
+  counter-increment: count;
+}
+.field-with-headline {
     margin-top: 1em;
     margin-bottom: 0;
 }
@@ -7,6 +14,14 @@
 }
 .field-with-headline .hgroup span {
   padding-left: 1.5em;
+}
+.field-with-headline .hgroup:before {
+  position: absolute;
+  content: counter(count, decimal-leading-zero);
+  left: 0.5em;
+  top:20%;
+  color: #8dae28;
+  font-weight: 400;
 }
 .field-with-headline .hgroup:after {
   position: absolute;
@@ -21,8 +36,8 @@
   content: "−";
 }
 .field-with-headline .hgroup .hgroup-title {
-	border:none;
-	padding:0.5em 1.0em;
-	background:rgba(0,0,0,0.75);
-  	color: #fff;
+  border:none;
+  padding:0.5em 1em 0.5em 2em;
+  background:rgba(0,0,0,0.75);
+    color: #fff;
 }
