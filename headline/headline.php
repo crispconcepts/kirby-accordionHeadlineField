@@ -8,7 +8,7 @@ class HeadlineField extends BaseField {
     ),
     'js' => array(
       'headline.js'
-    ),
+    )
   );
 
   public function result() {
@@ -20,7 +20,7 @@ class HeadlineField extends BaseField {
   }
 
   public function content() {
-    return '<h2 class="hgroup hgroup-single-line hgroup-compressed cf"><span class="hgroup-title">' . html($this->label) . '</span></h2>';
+    return '<h2 class="hgroup hgroup-single-line hgroup-compressed cf"><span class="hgroup-title">' . html($this->i18n($this->label)) . '</span></h2>';
   }
 
   public function element() {
