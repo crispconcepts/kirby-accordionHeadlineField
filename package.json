@@ -1,0 +1,8 @@
+{
+  "name": "accordionHeadlineField",
+  "version": "1.0.0",
+  "description": "Replaces the default headline field, and groups all content until next headline field in an accordion",
+  "author": "Luke Jacobs",
+  "license": "MIT",
+  "type": "kirby-plugin"
+}
